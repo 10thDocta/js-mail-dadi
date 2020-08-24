@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>MAIL + DADI</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <main>
+    <div class="container">
+      <div class="title">
+        <h1>EMAIL + DADI</h1>
+      </div>
+
+      <!-- sezione EMAIL -->
+      <section class="email_section">
+        <div class="email_input">
+          <label for="email">Inesrisci la tua email</label>
+          <input type="email" name="email" id="email" placeholder="indirizzo email">
+        </div>
+        <button id="email_check_btn">Click me</button>
+      </section>
+      <!-- /sezione EMAIL -->
+
+      <!-- Messaggio di errore -->
+      <div id="hide_message_error" class="hide">
+        <div class="section">
+          <h2>I valori inseriti non sono corretti</h2>
+        </div>
+      </div>
+      <!-- /Messaggio di errore -->
+
+
+      <!-- sezione DADI -->
+      <section class="dice_section">
+        <div class="number">
+          <div id="user_numb">0</div>
+          <div id="ai_numb">0</div>
+        </div>
+        <button id="dice_btn">Click me</button>
+      </section>
+
+      <!-- Messaggio di vittoria -->
+      <div id="message_victory" class="hide">
+        <div class="section">
+          <h2 id="victory_h2">I valori inseriti non sono corretti</h2>
+        </div>
+      </div>
+      <!-- /Messaggio di vittoria -->
+
+
+    </div>
+    <!-- /container -->
+  </main>
+
+  <script src="js/script.js" charset="utf-8"></script>
+</body>
+
+</html>

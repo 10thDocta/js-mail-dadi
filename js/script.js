@@ -1,5 +1,4 @@
 // definisco le variabili per l'HTML
-const emailAddress = document.getElementById('email');
 const hideMessageError = document.getElementById("hide_message_error");
 let victoryMessage = document.getElementById("message_victory");
 
@@ -40,13 +39,20 @@ const checkEmail = () => {
   if (checkInput(email)) {
     const arr = ['prova@test.it', 'prova2@test.it', 'test@test.it'];
 
-    const find = arr.indexOf(email);
+    let x = 0;
 
-    if (find === -1) {
+    for (let i = 0; i < arr.length; i++) {
+      if (arr[i] === email) {
+        x++;
+      }
+    }
+
+    if (x === 0) {
       alert('email non presente del DB');
     } else {
       alert('email ok, presente nel DB');
     }
+
   }
 };
 
